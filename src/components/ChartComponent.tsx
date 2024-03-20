@@ -32,7 +32,7 @@ const ChartComponent: React.FC<ChartProps> = ({ title }) => {
         })
         .catch(err => console.error('Hubo un error: ', err));
     }
-  }, [selectedIndicator]);
+  }, [selectedIndicator, title]);
 
   useEffect(() => {
     if (selectedIndicator && selectedYear) {
